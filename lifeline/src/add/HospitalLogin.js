@@ -1,12 +1,13 @@
 import "./styles.css";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import "./Hospitaldashboard.css";
-import Blooddashboard from "./BloodBankDashboard.js";
+import loginbloodbank from "./Loginbloodbank";
+import GoogleButton from "react-google-button";
 
-function Loginbloodbank() {
+function HospitalLogin() {
   const navigate = useNavigate();
-  const navigateTobloodDashboard = () => {
-    navigate("/BloodBankLogin/BloodBankDashboard");
+  const navigateToHospitalDashboard = () => {
+    navigate("/HospitalLogin/HospitalDashboard");
   };
 
 
@@ -15,24 +16,24 @@ function Loginbloodbank() {
       <div className="bg">
         <div className="containers">
           <div className="topnav2">
-            <a href="../"
-            >
-              Hospital
-            </a>
-            <a style={{
+            <a
+              style={{
                 textDecoration: "underline",
                 fontSize: "20px",
                 fontWeight: "bold",
-              }} >Bloodbank</a>
+              }}
+              href="/HospitalLogin"
+            >
+              Hospital
+            </a>
+            <a href="/BloodBankLogin">Bloodbank</a>
           </div>
         </div>
         <div className="text-block1">
           <h2 style={{ opacity: "100%" }}>WELCOME BACK </h2>
           <div>
             <form>
-              <input
-                type="text"
-                placeholder="Email"
+              <input type="text" placeholder="Email"
                 onChange={(event) => {
                 }}
               />
@@ -45,15 +46,17 @@ function Loginbloodbank() {
                 }}
               />
               <br />
-              <a href="">Forgot Password</a>
               <br />
+              <a style={{fontSize:"14px",textDecoration:"None"}} href="">Forgot Password</a>
+              <br />
+              
               <br />
               <button
                 className="loginbutton"
                 type="button"
                 onClick={
                   () => {
-                    return navigateTobloodDashboard();
+                    return navigateToHospitalDashboard();
                   }
                   //navigateToHospitalDashboard
                 }
@@ -62,10 +65,10 @@ function Loginbloodbank() {
               </button>
               <br />
               <br />
-
+            {/* <div><GoogleButton className="g-btn" type="dark" /></div> */}
               <h4>
                 <b>
-                  Don't have an account?
+                  Don't have an account?<br/>
                   <a href="">Sign Up</a>
                 </b>
               </h4>
@@ -77,4 +80,4 @@ function Loginbloodbank() {
   );
 }
 
-export default Loginbloodbank;
+export default HospitalLogin;

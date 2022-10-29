@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    
+    
   }
   
   /* Create two unequal columns that floats next to each other */
@@ -51,18 +53,19 @@
   width:100%;
   min-width:100%;
   max-width:100%;
-  height:50%;
-  min-height:50%;
+  height:65%;
+  min-height:65%;
   overflow:hidden;
   padding:1%;
   margin:0;
 }
 .row2{
+ 
     width:100%;
   min-width:100%;
   max-width:100%;
-  height:10%;
-  min-height:20%;
+  height:35%;
+  min-height:35%;
   overflow:hidden;
 }
 
@@ -219,13 +222,14 @@
 height:35px;
 width:322px;
 background: #D9D9D9;
-border-radius: 50px;
+border-radius: 20px;
+border:0px;
 }
 .field_name{
-font-family: 'Inter';
+
 font-style: normal;
 font-weight: 500;
-font-size: 20px;
+
 line-height: 24px;
 color: #000000;
 }
@@ -240,23 +244,40 @@ color: #000000;
 }
 
 .name{
-    font-family: 'Inter';
+   
 font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-
 color: #000000;
 
 }
 
 .sub_name{
-    font-family: 'Inter';
+    
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    
+
     color: rgba(0, 0, 0, 0.51);
     
 }
+/* check box columns */
+.column00 {
+  float: left;
+  width: 50%;
+   /* Should be removed. Only for demonstration */
+}
+
+
+.row00:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#btn2{  
+  position: absolute;
+  top:570px;
+  width: 400px;
+  height:50px;
+  right:400px;
+  
+  background:#aaa;
+  border-radius: 30px;
+} 
