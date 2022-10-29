@@ -4,10 +4,10 @@ import elonmusk from "./ElonMusk.jpg";
 import requests from "./RequestsCard.png";
 import Received from "./ReceivedCard.png";
 import Cards from "./Cards.png";
-import "./Hospitaldashboard.css";
+// import "./Hospitaldashboard.css";
 import { useState } from "react";
 
-import blood_request from "./BloodRequest.js";
+import BloodRequest from "./BloodRequest.js";
 
 //import Axios from "axios";
 const tableElements = {
@@ -20,7 +20,7 @@ const tableElements = {
   paddingRight: "5px",
 };
 
-function Hospitaldashboard() {
+function HospitalDashboard() {
 
   return (
     <div>
@@ -54,7 +54,7 @@ function Hospitaldashboard() {
   <div style={{paddingTop:"70px",paddingLeft:"40px"}}>
   <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/" >Profile</a><br/><br/>
  
-  <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/BloodRequest" >Blood Request</a><br/><br/>
+  <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/Login/Hospitaldashboard/BloodRequest" >Blood Request</a><br/><br/>
   <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/" >Location Tracking</a><br/><br/>
   <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/" >Blood Bank Details</a><br/><br/>
   <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/" >Logout</a><br/><br/>
@@ -124,5 +124,5 @@ function Hospitaldashboard() {
   );
 }
 
-export default Hospitaldashboard;
+export default HospitalDashboard;
 

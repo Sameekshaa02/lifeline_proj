@@ -1,37 +1,40 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Hospitaldashboard from "./add/Hospitaldashboard";
-import blood_request from "./add/BloodRequest";
-//import Dashboard from "./add/Dashboard";
-import Login from "./add/Login";
+import HospitalDashboard from "./add/HospitalDashboard";
+import BloodRequest from "./add/BloodRequest";
+import BloodBankLogin from "./add/BloodBankLogin";
+import BloodBankDashboard from "./add/BloodBankDashboard";
 import SignUp from "./add/SignUp";
-import Loginbloodbank from "./add/Loginbloodbank";
-import Blooddashboard from "./add/Blooddashboard";
-
+import HospitalLogin from "./add/HospitalLogin";
+import LocationTracking from "./add/LocationTracking";
+import BloodBankDetails from "./add/BloodBankDetails";
+import BloodRequirements from "./add/BloodRequirements";
+import DonorInformation from "./add/DonorInformation";
+import StockAvailable from "./add/StockAvailable";
+import AddDonor from "./add/AddDonor";
 function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Login />} />
-
-        <Route exact path="/Login" element={<Login />} />
-        <Route exact path="/Login/SignUp" element={<SignUp />} />
+        <Route exact path="/" element={<HospitalLogin />} />
         
-        <Route
-          exact
-          path="/Login/Hospitaldashboard"
-          element={<Hospitaldashboard />}
-        />
-        <Route
-          exact
-          path="/Loginbloodbank"
-          element={<Loginbloodbank/>}
-        />
-        <Route
-          exact
-          path="/Loginbloodbank/Blooddashboard"
-          element={<Blooddashboard/>}
-        />
+        {/* Hospital */}
+        <Route exact path="/HospitalLogin" element={<HospitalLogin />} />
+        <Route exact path="/HospitalLogin/HospitalDashboard"element={<HospitalDashboard />}/>
+        <Route exact path="/HospitalLogin/HospitalDashboard/BloodRequest" element={<BloodRequest />} />
+        <Route exact path="/HospitalLogin/HospitalDashboard/LocationTracking" element={<LocationTracking />} />
+        <Route exact path="/HospitalLogin/HospitalDashboard/BloodBankDetails" element={<BloodBankDetails />} />
+        
+        {/* BloodBank */}
+        <Route exact path="/BloodBankLogin" element={<BloodBankLogin />} />
+        <Route exact path="/BloodBankLogin/BloodBankDashboard" element={<BloodBankLogin />} />
+        <Route exact path="/BloodBankLogin/BloodBankDashboard/BloodRequirements" element={<BloodRequirements />} />
+        <Route exact path="/BloodBankLogin/BloodBankDashboard/DonorInformation" element={<DonorInformation />} />
+        <Route exact path="/BloodBankLogin/BloodBankDashboard/StockAvailable" element={<StockAvailable />} />
+        <Route exact path="/BloodBankLogin/BloodBankDashboard/AddDonor" element={<AddDonor />} />
+        
+
+
       </Routes>
     </Router>
   );
