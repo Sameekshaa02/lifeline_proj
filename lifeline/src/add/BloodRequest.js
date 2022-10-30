@@ -18,15 +18,19 @@ function BloodRequest() {
   const [bloodUnitsReq, setBloodUnitsReq] = useState("");
   const [contactNo, setContactNo] = useState("");
   const [status, setStatus] = useState("");
+  const [hospitalName, setHospitalName] = useState("");
+  const [date, setDate] = useState("");
 
   const handleSubmit = async (e) => {
     const newData = {
       patientName,
+      hospitalName,
+      date,
       bloodType,
       age,
       bloodUnitsReq,
       contactNo,
-      status
+      status,
     };
     console.log(newData);
     try {
@@ -41,6 +45,8 @@ function BloodRequest() {
     setAge("");
     setBloodUnitsReq("");
     setStatus("");
+    setHospitalName("");
+    setDate("");
     document.getElementById("form1").reset();
   };
   const onOptionChange = (e) => {
@@ -50,14 +56,14 @@ function BloodRequest() {
   return (
     <div>
       <div className="row">
-        <div className="left" >
+        <div className="left">
           <div className="c_r">
             <div className="c1_r1">
               <div className="c1_r1_c">
-                <div className="r1_c1" >
+                <div className="r1_c1">
                   <img src={logo1} />
                 </div>
-                <div className="r1_c2" >
+                <div className="r1_c2">
                   <h1>Lifeline</h1>
                   <p>Give Blood</p>
                 </div>
@@ -77,98 +83,192 @@ function BloodRequest() {
             </div>
           </div>
         </div>
-        <div className="right" >
-          <div className='odinMain'>
+        <div className="right">
+          <div className="odinMain">
             {/* Left Sidebar Area */}
-            <div class='odinLeftSidebar' style={{ marginTop: "20px",marginBottom:"0px",marginLeft:"20px" }}>
-            <form id="form1">
-                <label className="field_name" for="cnum" >Patient Name</label><br />
+            <div
+              class="odinLeftSidebar"
+              style={{
+                marginTop: "20px",
+                marginBottom: "0px",
+                marginLeft: "20px",
+              }}
+            >
+              <form id="form1">
+                <label className="field_name" for="cnum">
+                  Patient Name
+                </label>
+                <br />
                 <input
                   className="form_field"
-                  style={{width:"30%"}}
+                  style={{ width: "30%" }}
                   type="text"
                   id="patientName"
                   name="pname"
                   onChange={(e) => setPatientName(e.target.value)}
-                /><br />
-                <label className="field_name" for="cnum">Blood Type</label><br />
+                />
+                <br />
+                <label className="field_name" for="cnum">
+                  Hospital Name
+                </label>
+                <br />
+                <input
+                  className="form_field"
+                  style={{ width: "30%" }}
+                  type="text"
+                  id="patientName"
+                  name="pname"
+                  onChange={(e) => setHospitalName(e.target.value)}
+                />
+                <br />
+                <label className="field_name" for="cnum">
+                  Date
+                </label>
+                <br />
+                <input
+                  className="form_field"
+                  style={{ width: "30%" }}
+                  type="text"
+                  id="patientName"
+                  name="pname"
+                  onChange={(e) => setDate(e.target.value)}
+                />
+                <br />
+                <label className="field_name" for="cnum">
+                  Blood Type
+                </label>
+                <br />
                 <input
                   className="form_field"
                   type="text"
                   id="bloodType"
                   name="btype"
-                  style={{width:"30%"}}
+                  style={{ width: "30%" }}
                   onChange={(e) => setBloodType(e.target.value)}
-                /><br />
-                <label className="field_name" for="cnum">Patient Age</label><br />
+                />
+                <br />
+                <label className="field_name" for="cnum">
+                  Patient Age
+                </label>
+                <br />
                 <input
                   className="form_field"
                   type="text"
                   id="age"
                   name="page"
-                  style={{width:"30%"}}
+                  style={{ width: "30%" }}
                   onChange={(e) => setAge(e.target.value)}
-                /><br />
-                <label className="field_name" for="cnum">Blood Unit Required</label><br />
+                />
+                <br />
+                <label className="field_name" for="cnum">
+                  Blood Unit Required
+                </label>
+                <br />
                 <input
                   className="form_field"
                   type="text"
                   id="bloodUnitsReq"
                   name="bunit"
-                  style={{width:"30%"}}
+                  style={{ width: "30%" }}
                   onChange={(e) => setBloodUnitsReq(e.target.value)}
-                /><br />
-                <label className="field_name" for="cnum">Contact Number</label><br />
+                />
+                <br />
+                <label className="field_name" for="cnum">
+                  Contact Number
+                </label>
+                <br />
                 <input
                   className="form_field"
                   type="text"
                   id="contactNo"
                   name="cnum"
-                  style={{width:"30%"}}
+                  style={{ width: "30%" }}
                   onChange={(e) => setContactNo(e.target.value)}
-                /><br />
+                />
+                <br />
               </form>
-
             </div>
             <div className="odinMainContent">
-              
               {/* Main Content Area  */}
-              <div style={{ marginTop: "20px",marginBottom:"0px",marginLeft:"20px" }}>
-              <h2 style={{margin:"0px"}}>Blood request Type</h2><hr />
-<div className="row00">
-  <div className="column00">
-    <label className="container">
-  <input type="radio" name="status" value="Emergency" onChange={e => setStatus(e.target.value)}/><b>Emergency</b> <i style={{opacity:"60%"}} >[Immediately]</i>
-  <span className="checkmark"></span>
-</label><br />
-<label className="container">
-  <input type="radio" name="status" value="Urgent" onChange={e => setStatus(e.target.value)} /><b>Urgent</b> <i style={{opacity:"60%"}}>[Within an hour]</i>
-  <span className="checkmark"></span>
-</label>
-  </div>
-  <div className="column00">
-    <label className="container">
-  <input type="radio" checked="checked" name="status" value="Standard" onChange={e => setStatus(e.target.value)} /><b>Standard</b> <i style={{opacity:"60%"}}>[within 8 hr]</i>
-  <span className="checkmark"></span>
-</label><br />
-<label className="container">
-  <input type="radio" name="status" value="Group and Save"onChange={e => setStatus(e.target.value)} /><b>Group and Save</b> <i style={{opacity:"60%"}}>[within 7 days]</i>
-  <span className="checkmark"></span>
-</label>
- <button id="btn2"
- onClick={() => {
-  handleSubmit();
-  setPatientName("");
-  setBloodType("");
-  setAge("");
-  setBloodUnitsReq("");
-  setContactNo("");
+              <div
+                style={{
+                  marginTop: "20px",
+                  marginBottom: "0px",
+                  marginLeft: "20px",
+                }}
+              >
+                <h2 style={{ margin: "0px" }}>Blood request Type</h2>
+                <hr />
+                <div className="row00">
+                  <div className="column00">
+                    <label className="container">
+                      <input
+                        type="radio"
+                        name="status"
+                        value="Emergency"
+                        onChange={(e) => setStatus(e.target.value)}
+                      />
+                      <b>Emergency</b>{" "}
+                      <i style={{ opacity: "60%" }}>[Immediately]</i>
+                      <span className="checkmark"></span>
+                    </label>
+                    <br />
+                    <label className="container">
+                      <input
+                        type="radio"
+                        name="status"
+                        value="Urgent"
+                        onChange={(e) => setStatus(e.target.value)}
+                      />
+                      <b>Urgent</b>{" "}
+                      <i style={{ opacity: "60%" }}>[Within an hour]</i>
+                      <span className="checkmark"></span>
+                    </label>
+                  </div>
+                  <div className="column00">
+                    <label className="container">
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="status"
+                        value="Standard"
+                        onChange={(e) => setStatus(e.target.value)}
+                      />
+                      <b>Standard</b>{" "}
+                      <i style={{ opacity: "60%" }}>[within 8 hr]</i>
+                      <span className="checkmark"></span>
+                    </label>
+                    <br />
+                    <label className="container">
+                      <input
+                        type="radio"
+                        name="status"
+                        value="Group and Save"
+                        onChange={(e) => setStatus(e.target.value)}
+                      />
+                      <b>Group and Save</b>{" "}
+                      <i style={{ opacity: "60%" }}>[within 7 days]</i>
+                      <span className="checkmark"></span>
+                    </label>
+                    <button
+                      id="btn2"
+                      onClick={() => {
+                        handleSubmit();
+                        setPatientName("");
+                        setBloodType("");
+                        setAge("");
+                        setBloodUnitsReq("");
+                        setContactNo("");
                         setStatus("");
-  console.log(status);
-}}
- >Submit</button>
-  </div>
-</div>
+                        setDate("");
+                        setHospitalName("");
+                        console.log(status);
+                      }}
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

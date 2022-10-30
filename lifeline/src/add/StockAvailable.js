@@ -38,7 +38,6 @@ function StockAvailable() {
    <h1 style={{fontSize:"23px",opacity:"80%",margin:"0px"}}>LifeLine</h1>
    <p style={{margin:"0px"}}>Save a Life<br/>Give Blood</p>
     
-    
   </div>
 </div>
   </div>

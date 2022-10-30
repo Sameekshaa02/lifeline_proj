@@ -1,7 +1,6 @@
 import "./styles.css";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Hospitaldashboard.css";
-import loginbloodbank from "./Loginbloodbank";
 import GoogleButton from "react-google-button";
 
 function HospitalLogin() {
@@ -9,7 +8,6 @@ function HospitalLogin() {
   const navigateToHospitalDashboard = () => {
     navigate("/HospitalLogin/HospitalDashboard");
   };
-
 
   return (
     <div>
@@ -33,23 +31,21 @@ function HospitalLogin() {
           <h2 style={{ opacity: "100%" }}>WELCOME BACK </h2>
           <div>
             <form>
-              <input type="text" placeholder="Email"
-                onChange={(event) => {
-                }}
-              />
+              <input type="text" placeholder="Email" onChange={(event) => {}} />
               <br />
               <br />
               <input
                 type="Password"
                 placeholder="Password"
-                onChange={(event) => {
-                }}
+                onChange={(event) => {}}
               />
               <br />
               <br />
-              <a style={{fontSize:"14px",textDecoration:"None"}} href="">Forgot Password</a>
+              <a style={{ fontSize: "14px", textDecoration: "None" }} href="">
+                Forgot Password
+              </a>
               <br />
-              
+
               <br />
               <button
                 className="loginbutton"
@@ -65,10 +61,11 @@ function HospitalLogin() {
               </button>
               <br />
               <br />
-            {/* <div><GoogleButton className="g-btn" type="dark" /></div> */}
+              {/* <div><GoogleButton className="g-btn" type="dark" /></div> */}
               <h4>
                 <b>
-                  Don't have an account?<br/>
+                  Don't have an account?
+                  <br />
                   <a href="">Sign Up</a>
                 </b>
               </h4>
