@@ -2,7 +2,6 @@ import "./styles.css";
 import { useNavigate } from "react-router-dom";
 import "./Hospitaldashboard.css";
 import Blooddashboard from "./BloodBankDashboard.js";
-import Loginbloodbank from "./Loginbloodbank";
 
 function BloodBankLogin() {
   const navigate = useNavigate();

@@ -1,14 +1,12 @@
 import "./styles.css";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Hospitaldashboard.css";
-import loginbloodbank from "./Loginbloodbank";
 
 function SignUp() {
   const navigate = useNavigate();
   const navigateToAdminDashboard = () => {
     navigate("/Login/Hospitaldashboard");
   };
-
 
   return (
     <div>
@@ -32,28 +30,20 @@ function SignUp() {
           <h2 style={{ opacity: "100%" }}>New User </h2>
           <div>
             <form>
-              <input
-                type="text"
-                placeholder="Email"
-                onChange={(event) => {
-                }}
-              />
-           
+              <input type="text" placeholder="Email" onChange={(event) => {}} />
+
               <input
                 type="Password"
                 placeholder="Password"
-                onChange={(event) => {
-                }}
+                onChange={(event) => {}}
               />
-   
-              
+
               <input
                 type="Password"
                 placeholder="Confirm Password"
-                onChange={(event) => {
-                }}
+                onChange={(event) => {}}
               />
-              <br/>
+              <br />
               <button
                 className="loginbutton"
                 type="button"
@@ -71,7 +61,8 @@ function SignUp() {
 
               <h4>
                 <b>
-                 Already have an account?<br/>
+                  Already have an account?
+                  <br />
                   <a href="/Login">LOG IN</a>
                 </b>
               </h4>
@@ -84,4 +75,3 @@ function SignUp() {
 }
 
 export default SignUp;
-
