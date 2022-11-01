@@ -19,7 +19,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<HospitalLogin />} />
-
+        
         {/* Hospital */}
         <Route exact path="/HospitalLogin" element={<HospitalLogin />} />
         <Route

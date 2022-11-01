@@ -33,3 +33,4 @@ export class TempGMaps extends Component {
 export default GoogleApiWrapper({
   apiKey: "AIzaSyDRQluoYkfMB6rcChCmuyqtX-cg4VqSveU",
 })(TempGMaps);
+
