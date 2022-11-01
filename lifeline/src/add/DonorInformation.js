@@ -22,7 +22,7 @@ function DonorInformation() {
   return (
     <div>
       <div className="row">
-        {/* column 1 */},
+        {/* column 1 */}
         <div className="column1"
           style={{
             backgroundColor: "#F0A8AE"
@@ -49,13 +49,96 @@ function DonorInformation() {
             <div class='odinMainContentContainer'>
               <hr style={{ padding: "0px", margin: "0px", backgroundColor: "black" }} />
               <div style={{ paddingTop: "70px", paddingLeft: "40px" }}>
-                <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding: "10px", opacity: "10px" }} href="/" >Profile</a><br /><br />
+              <a
+                  style={{
+                    color: "black",
+                    textDecoration: "none",
+                    fontSize: "20px",
+                    textDecoration: "none",
+                    padding: "10px",
+                    opacity: "10px",
+                  }}
+                  href="/"
+                >
+                  Profile
+                </a>
+                <br />
+                <br />
 
-                <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding: "10px", opacity: "10px" }} href="/Login/Hospitaldashboard/BloodRequest" >Blood Request</a><br /><br />
-                <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding: "10px", opacity: "10px" }} href="/" >Location Tracking</a><br /><br />
-                <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding: "10px", opacity: "10px" }} href="/" >Blood Bank Details</a><br /><br />
-                <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding: "10px", opacity: "10px" }} href="/" >Logout</a><br /><br />
-              </div>
+                <a
+                  style={{
+                    color: "black",
+                    textDecoration: "none",
+                    fontSize: "20px",
+                    textDecoration: "none",
+                    padding: "10px",
+                    opacity: "10px",
+                  }}
+                  href="/BloodBankLogin/BloodBankDashboard/BloodRequirements"
+                >
+                  Blood Requirements
+                </a>
+                <br />
+                <br />
+                <a
+                  style={{
+                    color: "black",
+                    textDecoration: "none",
+                    fontSize: "20px",
+                    textDecoration: "none",
+                    padding: "10px",
+                    opacity: "10px",
+                  }}
+                  href="/BloodBankLogin/BloodBankDashboard/DonorInformation"
+                >
+                  Donor Information
+                </a>
+                <br />
+                <br />
+                <a
+                  style={{
+                    color: "black",
+                    textDecoration: "none",
+                    fontSize: "20px",
+                    textDecoration: "none",
+                    padding: "10px",
+                    opacity: "10px",
+                  }}
+                  href="/BloodBankLogin/BloodBankDashboard/StockAvailable"
+                >
+                 Stock Available
+                </a>
+                <br />
+                <br />
+                <a
+                  style={{
+                    color: "black",
+                    textDecoration: "none",
+                    fontSize: "20px",
+                    textDecoration: "none",
+                    padding: "10px",
+                    opacity: "10px",
+                  }}
+                  href="/BloodBankLogin/BloodBankDashboard/AddDonor"
+                >
+                  Add Donar
+                </a>
+                <br />
+                <br />
+                <a
+                  style={{
+                    color: "black",
+                    textDecoration: "none",
+                    fontSize: "20px",
+                    textDecoration: "none",
+                    padding: "10px",
+                    opacity: "10px",
+                  }}
+                  href="/"
+                >
+                  Logout
+                </a>
+                </div>
             </div>
           </div>
         </div>

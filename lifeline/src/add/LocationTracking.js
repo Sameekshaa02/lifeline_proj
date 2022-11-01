@@ -1,6 +1,7 @@
 function LocationTracking() {
     return (
-      <div><p>hi</p></div>
+      <div><h2>HELLO</h2><p>hi</p>
+      </div>
     );
   }
   

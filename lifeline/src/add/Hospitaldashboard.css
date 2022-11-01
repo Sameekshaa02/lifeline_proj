@@ -19,7 +19,7 @@
   }
   
   /* Clear floats after the columns */
-  .row:after {
+  .rowa:after {
     content: "";
     display: table;
     clear: both;
@@ -36,7 +36,7 @@
   min-height:95%;
   overflow:hidden;
   padding:1%;
-  /* margin:0;
+   margin:0;
   display: -webkit-flex;
   display:flex;
   flex-direction:row;
@@ -45,7 +45,7 @@
   align-self:auto;
   align-items:flex-start;
   align-content:flex-start;
-  */
+  
 }
 
 
@@ -118,8 +118,8 @@
   width:100%;
   min-width:100%;
   max-width:100%;
-  height:100%;
-  min-height:100%;
+  height:30%;
+  min-height:30%;
   overflow:hidden;
   
   
@@ -159,7 +159,7 @@
     clear: both;
   }
   /* Text over image */
-  .container {
+  .containera {
     position: relative;
     
   }
@@ -179,12 +179,15 @@
     position: relative;
     display: flex;
     opacity:90%;
+    margin: 0px;
+   
   }
 .searchTerm{
      border-radius:15px;
     height:27px;
     width:40px;
-    Top:10px;
+    margin: 0px;
+    
  }
 .wrap {
     width: 80%;
