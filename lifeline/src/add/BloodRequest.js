@@ -1,4 +1,5 @@
 import logo1 from "./logo1.png";
+import { useNavigate } from "react-router-dom";
 import ab from "./AB+.png";
 import "./request.css";
 import { useState } from "react";
@@ -7,6 +8,10 @@ import { collection, addDoc } from "firebase/firestore";
 //import Axios from "axios";
 
 function BloodRequest() {
+  const navigate = useNavigate();
+  const navigateToHospitalDashboard = () => {
+    navigate("/HospitalLogin/HospitalDashboard");
+  };
   const ref = collection(db, "hospital_blood_request");
 
   function addDocument(newData) {
@@ -78,7 +83,9 @@ function BloodRequest() {
             </div>
             <div className="c1_r4">
               <div className="container1">
-                <button id="btn1">Return to Dashboard</button>
+                <button id="btn1"  onClick={
+                  () => {
+                    return navigateToHospitalDashboard();}}>Return to Dashboard</button>
               </div>
             </div>
           </div>

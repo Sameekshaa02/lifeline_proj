@@ -4,7 +4,7 @@ import elonmusk from "./ElonMusk.jpg";
 import requests from "./RequestsCard.png";
 import Received from "./ReceivedCard.png";
 import Cards from "./Cards.png";
-// import "./Hospitaldashboard.css";
+import "./Hospitaldashboard.css";
 import { useState } from "react";
 
 import BloodRequest from "./BloodRequest.js";
@@ -24,8 +24,8 @@ function HospitalDashboard() {
 
   return (
     <div>
-      <div className="row">
-       {/* column 1 */},
+      <div className="rowa">
+       {/* column 1 */}
         <div className="column1" 
           style={{
             backgroundColor:"#F0A8AE"
@@ -54,9 +54,9 @@ function HospitalDashboard() {
   <div style={{paddingTop:"70px",paddingLeft:"40px"}}>
   <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/" >Profile</a><br/><br/>
  
-  <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/Login/Hospitaldashboard/BloodRequest" >Blood Request</a><br/><br/>
-  <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/" >Location Tracking</a><br/><br/>
-  <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/" >Blood Bank Details</a><br/><br/>
+  <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/HospitalLogin/HospitalDashboard/BloodRequest" >Blood Request</a><br/><br/>
+  <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/HospitalLogin/HospitalDashboard/LocationTracking" >Location Tracking</a><br/><br/>
+  <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/HospitalLogin/HospitalDashboard/BloodBankDetails" >Blood Bank Details</a><br/><br/>
   <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/" >Logout</a><br/><br/>
   </div>
   </div>
@@ -72,13 +72,13 @@ function HospitalDashboard() {
   {/* <!-- Left Sidebar Area --> */}
   <div class='odinLeftSidebarContainer1'>
  
-  <div class="container">
+  <div class="containera">
  
   <img style={{opacity:"60%"}} src={bgimage}/>
-  <div class="text-block">
-    <div class="wrap">
-      <div class="search">
-        <input style={{marginTop:"100px"}} type="text" class="searchTerm" placeholder="Search" />
+  <div className="text-block">
+    <div className="wrap">
+      <div className="search">
+        <input style={{}} type="text" class="searchTerm" placeholder="Search" />
     
       </div>
     </div>

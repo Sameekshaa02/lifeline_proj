@@ -50,7 +50,7 @@ function HospitalLogin() {
               <button
                 className="loginbutton"
                 type="button"
-                onClick={
+                 onClick={
                   () => {
                     return navigateToHospitalDashboard();
                   }
