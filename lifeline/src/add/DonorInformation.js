@@ -23,6 +23,7 @@ function DonorInformation() {
   function getDocuments() {
     return getDocs(ref);
   }
+  
   useEffect(() => {
     getDataDocs();
   }, []);
