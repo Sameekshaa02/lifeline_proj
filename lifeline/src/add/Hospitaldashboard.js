@@ -28,34 +28,40 @@ function HospitalDashboard() {
         <div
           className="column1"
           style={{
-            backgroundColor: "#F0A8AE",
-          }}
-        >
-          <div class="odinMainContainer">
-            {/* <!-- Left Sidebar Area[upper] --> */}
-            <div class="odinLeftSidebarContainer">
-              <div className="rowlogo">
-                <br />
-                <div
-                  className="columnlogo1"
-                  style={{ backgroundColor: "#F0A8AE" }}
-                >
-                  <img style={{ width: "95%", height: "100%" }} src={logo1} />
-                </div>
-                <div class="columnlogo2" style={{ backgroundColor: "" }}>
-                  <h1
-                    style={{ fontSize: "23px", opacity: "80%", margin: "0px" }}
-                  >
-                    LifeLine
-                  </h1>
-                  <p style={{ margin: "0px" }}>
-                    Save a Life
-                    <br />
-                    Give Blood
-                  </p>
-                </div>
-              </div>
-            </div>
+            backgroundColor:"#F0A8AE"
+          }}>
+    
+    <div class='odinMainContainer'>
+  {/* <!-- Left Sidebar Area[upper] --> */}
+  <div class='odinLeftSidebarContainer'>
+    <div className="rowlogo">
+    <br />
+  <div className="columnlogo1" style={{backgroundColor:"#F0A8AE"}}>
+    <img style={{width:"95%",height:"100%"}} src={logo1}/>
+  </div>
+  <div class="columnlogo2" style={{backgroundColor:""}}>
+   <h1 style={{fontSize:"23px",opacity:"80%",margin:"0px"}}>LifeLine</h1>
+   <p style={{margin:"0px"}}>Save a Life<br/>Give Blood</p>
+    
+    
+  </div>
+</div>
+  </div>
+  
+  {/* Left Sidebar Area[Lower] */}
+  <div class='odinMainContentContainer'><br /><br />
+  <hr style={{ padding:"0px" , margin:"0px" , backgroundColor:"black" }}/><br />
+  <div style={{paddingTop:"70px",paddingLeft:"40px"}}>
+  <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/" >Profile</a><br/><br/><br />
+ 
+  <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/HospitalLogin/HospitalDashboard/BloodRequest" >Blood Request</a><br/><br/><br />
+  <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/HospitalLogin/HospitalDashboard/LocationTracking" >Location Tracking</a><br/><br/><br />
+  <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/HospitalLogin/HospitalDashboard/BloodBankDetails" >Blood Bank Details</a><br/><br/><br />
+  <a style={{ color: "black", textDecoration: "none", fontSize: "20px", textDecoration: "none", padding:"10px",opacity:"10px"}} href="/" >Logout</a><br/><br/><br /><br />
+  </div>
+  </div>
+</div>
+  </div>
 
             {/* Left Sidebar Area[Lower] */}
             <div class="odinMainContentContainer">
