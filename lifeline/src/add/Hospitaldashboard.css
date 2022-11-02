@@ -110,8 +110,26 @@
   align-content:flex-start;
   
 }
+.odinMainContainer80
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:90%;
+  height:95vh;
+  min-height:95%;
+  overflow:hidden;
 
-
+  display: -webkit-flex;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  align-self:auto;
+  align-items:flex-start;
+  align-content:flex-start;
+  
+}
 
 .odinLeftSidebarContainer1
 {
@@ -124,8 +142,19 @@
   
   
 }
+.odinLeftSidebarContainer80
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:30%;
+  min-height:30%;
+  overflow:hidden;
+  
+  
+}
 
-.odinMainContentContainer2
+.odinMainContentContainer8
 {
   width:100%;
   min-width:100%;
@@ -134,6 +163,24 @@
   min-height:70%;
   overflow:hidden;
   
+}
+.odinMainContentContainer18
+{
+  width:30%;
+  min-width:30%;
+  max-width:30%;
+  height:70%;
+  min-height:70%;
+  overflow:hidden;
+  
+}
+.odinMainContentContainer2 {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 70%;
+  min-height: 70%;
+  overflow: hidden;
 }
 /* ROW 2 */
 /* Two columns */
@@ -225,7 +272,7 @@
   }
   table {
     border-collapse: collapse;
-    width: 90%;
+    width: 30%;
   }
   
   th, td {
@@ -233,21 +280,23 @@
     text-align: left;
     border-bottom: 1px solid #ddd;
   }
-  .left {
+  .leftx {
     float: left;
     width: 30%;
     background-color:#F5F5F5;
+    height: 105%;
   }
   
-  .right {
+  .rightx {
     float: left;
     width: 70%;
     background-color:rgba(231, 45, 59, 0.4);
     align-self:baseline;
+    height: 105%;
   }
   
   /* Clear floats after the columns */
-  .row:after {
+  .r:after {
     content: "";
     display: table;
     clear: both;
@@ -296,7 +345,7 @@
   overflow:hidden;
 }
 
-.odinMainContent
+.main
 {
   width:100%;
   min-width:100%;
@@ -424,6 +473,7 @@
         width: 300px;  
         height: 200px;  
         padding:50px;
+        
         }  
         #btn1{  
             position: absolute;
@@ -452,7 +502,7 @@ background: #D9D9D9;
 border-radius: 20px;
 border:0px;
 }
-.field_name{
+.hospitalname{
 
 font-style: normal;
 font-weight: 500;
@@ -460,7 +510,7 @@ font-weight: 500;
 line-height: 24px;
 color: #000000;
 }
-
+/* 
 .box{
    width:33px;
    height:20px;
@@ -468,37 +518,37 @@ color: #000000;
     top: 781px;
     background: #D9D9D9;
     accent-color: green;
-}
-
+} */
+/* 
 .name{
    
 font-style: normal;
 color: #000000;
 
-}
+} */
 
-.sub_name{
+/* .sub_name{
     
     font-style: normal;
     font-weight: 500;
 
     color: rgba(0, 0, 0, 0.51);
     
-}
+} */
 /* check box columns */
-.column00 {
+.bloodrequesttypecolumn {
   float: left;
   width: 50%;
    /* Should be removed. Only for demonstration */
 }
 
 
-.row00:after {
+.bloodrequesttyperow:after {
   content: "";
   display: table;
   clear: both;
 }
-#btn2{  
+ #submitbutton{  
   position: absolute;
   top:570px;
   width: 400px;
@@ -507,4 +557,4 @@ color: #000000;
   
   background:#aaa;
   border-radius: 30px;
-} 
+}  

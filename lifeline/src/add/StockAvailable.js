@@ -152,7 +152,6 @@ function StockAvailable() {
   <img style={{position: "absolute",
 width: "775px",
 height: "250px",
-left: "125px",
 top: "25px",
 }} src={bar}/>
 
@@ -160,14 +159,14 @@ top: "25px",
 <img style={{position: "absolute",
 width: "215px",
 height: "175px",
-left: "125px",
+
 top: "300px",
 }} src={sq}/> 
 
 <img style={{position: "absolute",
 width: "42px",
 height: "60px",
-left: "150px",
+
 top: "350px",
 }} src={drop}/> 
 
@@ -177,7 +176,7 @@ top: "350px",
   position: "absolute",
 width: "351px",
 height: "59px",
-left: "220px",
+
 top: "300px",
 
 fontFamily: "Inter",
@@ -195,7 +194,7 @@ color: "#333333"
   position: "absolute",
 width: "351px",
 height: "59px",
-left: "220px",
+
 top: "350px",
 fontFamily: "Nanum Gothic, sans-serif",
 fontStyle: "normal",
@@ -210,14 +209,14 @@ color: "#333333"
 <img style={{position: "absolute",
 width: "215px",
 height: "175px",
-left: "400px",
+
 top: "300px",
 }} src={sq}/> 
 
 <img style={{position: "absolute",
 width: "42px",
 height: "60px",
-left: "425px",
+
 top: "350px",
 }} src={drop}/> 
 
@@ -227,7 +226,7 @@ top: "350px",
   position: "absolute",
 width: "351px",
 height: "59px",
-left: "495px",
+
 top: "300px",
 
 fontFamily: "Inter",
@@ -245,7 +244,7 @@ color: "#333333"
   position: "absolute",
 width: "351px",
 height: "59px",
-left: "495px",
+
 top: "350px",
 fontFamily: "Nanum Gothic, sans-serif",
 fontStyle: "normal",
@@ -260,7 +259,7 @@ color: "#333333"
 <img style={{position: "absolute",
 width: "215px",
 height: "175px",
-left: "675px",
+
 top: "300px",
 }} src={sq}/>
 
@@ -277,7 +276,7 @@ top: "350px",
   position: "absolute",
 width: "351px",
 height: "59px",
-left: "770px",
+
 top: "300px",
 
 fontFamily: "Inter",
@@ -291,33 +290,17 @@ color: "#333333"
 
 <p
   style=
-{{
-  position: "absolute",
-width: "351px",
-height: "59px",
-left: "770px",
-top: "350px",
-fontFamily: "Nanum Gothic, sans-serif",
-fontStyle: "normal",
-fontWeight: "700",
-fontSize: "30px",
-color: "#333333"
-
-}}>43
+{{position: "absolute",width: "351px",height: "59px",top: "350px",fontFamily: "Nanum Gothic, sans-serif",fontStyle: "normal",fontWeight: "700",fontSize: "30px",color: "#333333"}}>43
 </p>
 
 {/*<!-- fourth box --> */}
-<img style={{position: "absolute",
-width: "215px",
-height: "175px",
-left: "125px",
-top: "500px",
+<img style={{position: "absolute",width: "215px",height: "175px",top: "500px",
 }} src={sq}/>
 
 <img style={{position: "absolute",
 width: "42px",
 height: "60px",
-left: "150px",
+
 top: "550px",
 }} src={drop}/> 
 
@@ -327,7 +310,7 @@ top: "550px",
   position: "absolute",
 width: "351px",
 height: "59px",
-left: "220px",
+
 top: "500px",
 
 fontFamily: "Inter",
@@ -345,7 +328,7 @@ color: "#333333"
   position: "absolute",
 width: "351px",
 height: "59px",
-left: "220px",
+
 top: "550px",
 fontFamily: "Nanum Gothic, sans-serif",
 fontStyle: "normal",
@@ -360,14 +343,14 @@ color: "#333333"
 <img style={{position: "absolute",
 width: "215px",
 height: "175px",
-left: "400px",
+
 top: "500px",
 }} src={sq}/> 
 
 <img style={{position: "absolute",
 width: "42px",
 height: "60px",
-left: "425px",
+
 top: "550px",
 }} src={drop}/> 
 
@@ -377,7 +360,7 @@ top: "550px",
   position: "absolute",
 width: "351px",
 height: "59px",
-left: "495px",
+
 top: "500px",
 
 fontFamily: "Inter",
@@ -395,7 +378,7 @@ color: "#333333"
   position: "absolute",
 width: "351px",
 height: "59px",
-left: "495px",
+
 top: "550px",
 fontFamily: "Nanum Gothic, sans-serif",
 fontStyle: "normal",
@@ -410,14 +393,14 @@ color: "#333333"
 <img style={{position: "absolute",
 width: "215px",
 height: "175px",
-left: "675px",
+
 top: "500px",
 }} src={sq}/>
 
 <img style={{position: "absolute",
 width: "42px",
 height: "60px",
-left: "700px",
+
 top: "550px",
 }} src={drop}/>
 
@@ -427,7 +410,7 @@ top: "550px",
   position: "absolute",
 width: "351px",
 height: "59px",
-left: "770px",
+
 top: "500px",
 
 fontFamily: "Inter",
@@ -445,7 +428,7 @@ color: "#333333"
   position: "absolute",
 width: "351px",
 height: "59px",
-left: "770px",
+
 top: "550px",
 fontFamily: "Nanum Gothic, sans-serif",
 fontStyle: "normal",

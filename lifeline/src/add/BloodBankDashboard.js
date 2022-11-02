@@ -62,7 +62,7 @@ function Blooddashboard() {
                 >
                   Profile
                 </a>
-                <br />
+                <br /><br />
                 <br />
 
                 <a
@@ -78,7 +78,7 @@ function Blooddashboard() {
                 >
                   Blood Requirements
                 </a>
-                <br />
+                <br /><br />
                 <br />
                 <a
                   style={{
@@ -93,7 +93,7 @@ function Blooddashboard() {
                 >
                   Donor Information
                 </a>
-                <br />
+                <br /><br />
                 <br />
                 <a
                   style={{
@@ -109,7 +109,7 @@ function Blooddashboard() {
                  Stock Available
                 </a>
                 <br />
-                <br />
+                <br /><br />
                 <a
                   style={{
                     color: "black",
@@ -124,7 +124,7 @@ function Blooddashboard() {
                   Add Donar
                 </a>
                 <br />
-                <br />
+                <br /><br />
                 <a
                   style={{
                     color: "black",
@@ -137,7 +137,7 @@ function Blooddashboard() {
                   href="/"
                 >
                   Logout
-                </a></div>
+                </a><br /><br /><br /><br /></div>
   </div>
 </div>
   </div>
@@ -157,7 +157,7 @@ function Blooddashboard() {
   <div class="text-block">
     <div class="wrap">
       <div class="search">
-        <input style={{marginTop:"100px"}} type="text" class="searchTerm" placeholder="Search" />
+        <input style={{}} type="text" class="searchTerm" placeholder="Search" />
     
       </div>
     </div>

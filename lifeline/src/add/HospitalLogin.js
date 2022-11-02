@@ -2,13 +2,36 @@ import "./styles.css";
 import { useNavigate } from "react-router-dom";
 import "./Hospitaldashboard.css";
 import GoogleButton from "react-google-button";
+import { useEffect } from "react";
+import {db} from "./firebase-config";
+import { useState } from "react";
+import { collection, getDocs } from "firebase/firestore";
+
+
 
 function HospitalLogin() {
   const navigate = useNavigate();
   const navigateToHospitalDashboard = () => {
     navigate("/HospitalLogin/HospitalDashboard");
   };
+  const [emailStr, setEmailStr] = useState("");
+  const [passwordStr, setPasswordStr] = useState("");
+  const [bb_hospital_markers, setbb_hospital_markers] = useState([]);
+  const ref = collection(db, "bb_hospitals_markers");
+  function getDocuments() {
+    return getDocs(ref);
+  }
 
+  useEffect(() => {
+    getDataDocs();
+    
+  }, []);
+
+  const getDataDocs = async () => {
+    const data = await getDocuments();
+    console.log(data.docs);
+    setbb_hospital_markers(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  };
   return (
     <div>
       <div className="bg">
@@ -31,13 +54,13 @@ function HospitalLogin() {
           <h2 style={{ opacity: "100%" }}>WELCOME BACK </h2>
           <div>
             <form>
-              <input type="text" placeholder="Email" onChange={(event) => {}} />
+              <input type="text" placeholder="Email" onChange={(event) => { setEmailStr(event.target.value)}} />
               <br />
               <br />
               <input
                 type="Password"
                 placeholder="Password"
-                onChange={(event) => {}}
+                onChange={(event) => { setPasswordStr(event.target.value) }}
               />
               <br />
               <br />
@@ -50,9 +73,12 @@ function HospitalLogin() {
               <button
                 className="loginbutton"
                 type="button"
-                 onClick={
+                onClick={
                   () => {
-                    return navigateToHospitalDashboard();
+                    console.log(bb_hospital_markers); // return navigateToHospitalDashboard();
+                    {bb_hospital_markers.map((doc, index) => {
+                     if(doc.email === emailStr&&doc.password===passwordStr&&doc.color=="red"){return navigateToHospitalDashboard();}
+                  })}
                   }
                   //navigateToHospitalDashboard
                 }
