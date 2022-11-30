@@ -60,8 +60,8 @@ function BloodRequest() {
 
   return (
     <div>
-      <div className="row">
-        <div className="left">
+      <div className="r">
+        <div className="leftx">
           <div className="c_r">
             <div className="c1_r1">
               <div className="c1_r1_c">
@@ -90,7 +90,7 @@ function BloodRequest() {
             </div>
           </div>
         </div>
-        <div className="right">
+        <div className="rightx">
           <div className="odinMain">
             {/* Left Sidebar Area */}
             <div
@@ -102,7 +102,7 @@ function BloodRequest() {
               }}
             >
               <form id="form1">
-                <label className="field_name" for="cnum">
+                <label className="hospitalname" for="cnum">
                   Patient Name
                 </label>
                 <br />
@@ -115,7 +115,7 @@ function BloodRequest() {
                   onChange={(e) => setPatientName(e.target.value)}
                 />
                 <br />
-                <label className="field_name" for="cnum">
+                <label className="hospitalname" for="cnum">
                   Hospital Name
                 </label>
                 <br />
@@ -128,7 +128,7 @@ function BloodRequest() {
                   onChange={(e) => setHospitalName(e.target.value)}
                 />
                 <br />
-                <label className="field_name" for="cnum">
+                <label className="hospitalname" for="cnum">
                   Date
                 </label>
                 <br />
@@ -141,7 +141,7 @@ function BloodRequest() {
                   onChange={(e) => setDate(e.target.value)}
                 />
                 <br />
-                <label className="field_name" for="cnum">
+                <label className="hospitalname" for="cnum">
                   Blood Type
                 </label>
                 <br />
@@ -154,7 +154,7 @@ function BloodRequest() {
                   onChange={(e) => setBloodType(e.target.value)}
                 />
                 <br />
-                <label className="field_name" for="cnum">
+                <label className="hospitalname" for="cnum">
                   Patient Age
                 </label>
                 <br />
@@ -167,7 +167,7 @@ function BloodRequest() {
                   onChange={(e) => setAge(e.target.value)}
                 />
                 <br />
-                <label className="field_name" for="cnum">
+                <label className="hospitalname" for="cnum">
                   Blood Unit Required
                 </label>
                 <br />
@@ -180,7 +180,7 @@ function BloodRequest() {
                   onChange={(e) => setBloodUnitsReq(e.target.value)}
                 />
                 <br />
-                <label className="field_name" for="cnum">
+                <label className="hospitalname" for="cnum">
                   Contact Number
                 </label>
                 <br />
@@ -195,7 +195,7 @@ function BloodRequest() {
                 <br />
               </form>
             </div>
-            <div className="odinMainContent">
+            <div className="main">
               {/* Main Content Area  */}
               <div
                 style={{
@@ -206,8 +206,8 @@ function BloodRequest() {
               >
                 <h2 style={{ margin: "0px" }}>Blood request Type</h2>
                 <hr />
-                <div className="row00">
-                  <div className="column00">
+                <div className="bloodrequesttyperow">
+                  <div className="bloodrequesttypecolumn">
                     <label className="container">
                       <input
                         type="radio"
@@ -258,7 +258,7 @@ function BloodRequest() {
                       <span className="checkmark"></span>
                     </label>
                     <button
-                      id="btn2"
+                      id="submitbutton"
                       onClick={() => {
                         handleSubmit();
                         setPatientName("");
