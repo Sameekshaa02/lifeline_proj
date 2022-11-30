@@ -558,3 +558,31 @@ color: #000000;
   background:#aaa;
   border-radius: 30px;
 }  
+
+/* Create three equal columns that floats next to each other */
+.xxx {
+  float: left;
+  width: 33.3%;
+  padding: 10px;
+ 
+}
+.yyy {
+  float: left;
+  width: 33.3%;
+  padding: 10px;
+ 
+}
+.zzz {
+  float: left;
+  width:33.3%;
+  padding: 10px;
+  
+}
+
+
+.xyz:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* end of three columns */

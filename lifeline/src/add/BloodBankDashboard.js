@@ -49,39 +49,12 @@ function Blooddashboard() {
   <div class='odinMainContentContainer'>
   <hr style={{ padding:"0px" , margin:"0px" , backgroundColor:"black" }}/>
   <div style={{paddingTop:"70px",paddingLeft:"40px"}}>
-  <a
-                  style={{
-                    color: "black",
-                    textDecoration: "none",
-                    fontSize: "20px",
-                    textDecoration: "none",
-                    padding: "10px",
-                    opacity: "10px",
-                  }}
-                  href="/"
-                >
-                  Profile
-                </a>
+  <a style={{color: "black",textDecoration: "none",fontSize: "20px",textDecoration: "none",padding: "10px",opacity: "10px",}} href="/">Profile</a><br /><br /> <br />
+  <a  style={{color: "black",textDecoration: "none",fontSize: "20px",textDecoration: "none",padding: "10px",opacity: "10px",}} href="/BloodBankLogin/BloodBankDashboard/BloodRequirements">Blood Requirements</a>
+    
                 <br /><br />
                 <br />
-
-                <a
-                  style={{
-                    color: "black",
-                    textDecoration: "none",
-                    fontSize: "20px",
-                    textDecoration: "none",
-                    padding: "10px",
-                    opacity: "10px",
-                  }}
-                  href="/BloodBankLogin/BloodBankDashboard/BloodRequirements"
-                >
-                  Blood Requirements
-                </a>
-                <br /><br />
-                <br />
-                <a
-                  style={{
+                <a  style={{
                     color: "black",
                     textDecoration: "none",
                     fontSize: "20px",
