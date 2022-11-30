@@ -1,7 +1,7 @@
 import logo1 from "./logo1.png";
 import { useNavigate } from "react-router-dom";
 import ab from "./AB+.png";
-import "./request.css";
+import "./Hospitaldashboard.css";
 import { useState } from "react";
 import { db } from "./firebase-config";
 import { collection, addDoc } from "firebase/firestore";
@@ -9,8 +9,8 @@ import { collection, addDoc } from "firebase/firestore";
 
 function AddDonor() {
   const navigate = useNavigate();
-  const navigateToBloodBankDashboard = () => {
-    navigate("/HospitalLogin/BloodBankDashboard");
+  const navigateToBloodbankDashboard = () => {
+    navigate("/BloodBankLogin/BloodBankDashboard");
   };
   const ref = collection(db, "donors");
 
@@ -82,8 +82,8 @@ function AddDonor() {
               </div>
             </div>
             <div className="c1_r2">
-              <h2 style={{ fontSize: "10px" }}> </h2>
-              <p>Fill in the details to request blood from blood bank</p>
+              <h2 style={{ fontSize: "18px" }}>Add Donor </h2>
+              <p>Fill in the details to add a donor into the system</p>
             </div>
             <div className="c1_r3">
               <img style={{ width: "400px", height: "280px" }} src={ab} />
@@ -93,8 +93,9 @@ function AddDonor() {
                 <button
                   id="btn1"
                   onClick={() => {
-                    return navigateToBloodBankDashboard();
-                  }}
+
+                    return navigateToBloodbankDashboard();
+                                      }}
                 >
                   Return to Dashboard
                 </button>
@@ -106,7 +107,7 @@ function AddDonor() {
           <div className="odinMain">
             {/* Left Sidebar Area */}
             <div
-              class="odinLeftSidebar"
+              className="odinLeftSidebar"
               style={{
                 marginTop: "20px",
                 marginBottom: "0px",
@@ -207,7 +208,7 @@ function AddDonor() {
                 <br />
               </form>
             </div>
-            <div className="main">
+            <div className="">
               {/* Main Content Area  */}
               <div
                 style={{
@@ -216,7 +217,6 @@ function AddDonor() {
                   marginLeft: "20px",
                 }}
               >
-                <hr />
                 <button
                   id="submitbutton"
                   onClick={() => {

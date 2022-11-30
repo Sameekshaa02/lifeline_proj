@@ -1,9 +1,9 @@
+import logo1 from "./logo1.png";
+import bgimage from "./dashboardimage.png";
+import rectangle from "./Rectangle 11.png";
+import Group14 from "./Group 14.png";
 import "./Hospitaldashboard.css";
-import logo1  from "./logo1.png";
-import bar from "./Group 10.png";
-import sq from "./Rectangle 11.png";
-import drop from "./Vector.png";
-//import { useState } from "react";
+import { useState } from "react";
 //import Axios from "axios";
 const tableElements = {
   border: "1px solid black",
@@ -15,7 +15,7 @@ const tableElements = {
   paddingRight: "5px",
 };
 
-function StockAvailable() {
+function Blooddashboard() {
 
   return (
     <div>
@@ -32,11 +32,12 @@ function StockAvailable() {
     <div className="rowlogo">
     <br />
   <div className="columnlogo1" style={{backgroundColor:"#F0A8AE"}}>
-     <img style={{width:"95%",height:"100%"}} src={logo1}/> 
+    <img style={{width:"95%",height:"100%"}} src={logo1}/>
   </div>
   <div class="columnlogo2" style={{backgroundColor:""}}>
    <h1 style={{fontSize:"23px",opacity:"80%",margin:"0px"}}>LifeLine</h1>
    <p style={{margin:"0px"}}>Save a Life<br/>Give Blood</p>
+    
     
   </div>
 </div>
@@ -46,39 +47,12 @@ function StockAvailable() {
   <div class='odinMainContentContainer'>
   <hr style={{ padding:"0px" , margin:"0px" , backgroundColor:"black" }}/>
   <div style={{paddingTop:"70px",paddingLeft:"40px"}}>
-  <a
-                  style={{
-                    color: "black",
-                    textDecoration: "none",
-                    fontSize: "20px",
-                    textDecoration: "none",
-                    padding: "10px",
-                    opacity: "10px",
-                  }}
-                  href="/"
-                >
-                  Profile
-                </a>
+  <a style={{color: "black",textDecoration: "none",fontSize: "20px",textDecoration: "none",padding: "10px",opacity: "10px",}} href="/">Profile</a><br /><br /> <br />
+  <a  style={{color: "black",textDecoration: "none",fontSize: "20px",textDecoration: "none",padding: "10px",opacity: "10px",}} href="/BloodBankLogin/BloodBankDashboard/BloodRequirements">Blood Requirements</a>
+    
+                <br /><br />
                 <br />
-                <br />
-
-                <a
-                  style={{
-                    color: "black",
-                    textDecoration: "none",
-                    fontSize: "20px",
-                    textDecoration: "none",
-                    padding: "10px",
-                    opacity: "10px",
-                  }}
-                  href="/BloodBankLogin/BloodBankDashboard/BloodRequirements"
-                >
-                  Blood Requirements
-                </a>
-                <br />
-                <br />
-                <a
-                  style={{
+                <a  style={{
                     color: "black",
                     textDecoration: "none",
                     fontSize: "20px",
@@ -90,7 +64,7 @@ function StockAvailable() {
                 >
                   Donor Information
                 </a>
-                <br />
+                <br /><br />
                 <br />
                 <a
                   style={{
@@ -106,7 +80,7 @@ function StockAvailable() {
                  Stock Available
                 </a>
                 <br />
-                <br />
+                <br /><br />
                 <a
                   style={{
                     color: "black",
@@ -121,7 +95,7 @@ function StockAvailable() {
                   Add Donar
                 </a>
                 <br />
-                <br />
+                <br /><br />
                 <a
                   style={{
                     color: "black",
@@ -134,8 +108,7 @@ function StockAvailable() {
                   href="/"
                 >
                   Logout
-                </a>
-</div>
+                </a><br /><br /><br /><br /></div>
   </div>
 </div>
   </div>
@@ -148,322 +121,31 @@ function StockAvailable() {
     <div class='odinMainContainer11'>
   {/* <!-- Left Sidebar Area --> */}
   <div class='odinLeftSidebarContainer1'>
+ 
   <div class="container">
-  <img style={{position: "absolute",
-width: "775px",
-height: "250px",
-left: "125px",
-top: "25px",
-}} src={bar}/>
-
-{/*<!-- First box --> */}
-<img style={{position: "absolute",
-width: "215px",
-height: "175px",
-left: "125px",
-top: "300px",
-}} src={sq}/> 
-
-<img style={{position: "absolute",
-width: "42px",
-height: "60px",
-left: "150px",
-top: "350px",
-}} src={drop}/> 
-
-<p
-  style=
-{{
-  position: "absolute",
-width: "351px",
-height: "59px",
-left: "220px",
-top: "300px",
-
-fontFamily: "Inter",
-fontStyle: "normal",
-fontWeight: "700",
-fontSize: "30px",
-color: "#333333"
-
-}}>A+
-</p>
-
-<p
-  style=
-{{
-  position: "absolute",
-width: "351px",
-height: "59px",
-left: "220px",
-top: "350px",
-fontFamily: "Nanum Gothic, sans-serif",
-fontStyle: "normal",
-fontWeight: "700",
-fontSize: "30px",
-color: "#333333"
-
-}}>43
-</p>
-
-{/*<!-- second box --> */}
-<img style={{position: "absolute",
-width: "215px",
-height: "175px",
-left: "400px",
-top: "300px",
-}} src={sq}/> 
-
-<img style={{position: "absolute",
-width: "42px",
-height: "60px",
-left: "425px",
-top: "350px",
-}} src={drop}/> 
-
-<p
-  style=
-{{
-  position: "absolute",
-width: "351px",
-height: "59px",
-left: "495px",
-top: "300px",
-
-fontFamily: "Inter",
-fontStyle: "normal",
-fontWeight: "700",
-fontSize: "30px",
-color: "#333333"
-
-}}>B+
-</p>
-
-<p
-  style=
-{{
-  position: "absolute",
-width: "351px",
-height: "59px",
-left: "495px",
-top: "350px",
-fontFamily: "Nanum Gothic, sans-serif",
-fontStyle: "normal",
-fontWeight: "700",
-fontSize: "30px",
-color: "#333333"
-
-}}>43
-</p>
-
-{/*<!-- third box --> */}
-<img style={{position: "absolute",
-width: "215px",
-height: "175px",
-left: "675px",
-top: "300px",
-}} src={sq}/>
-
-<img style={{position: "absolute",
-width: "42px",
-height: "60px",
-left: "700px",
-top: "350px",
-}} src={drop}/>
-
-<p
-  style=
-{{
-  position: "absolute",
-width: "351px",
-height: "59px",
-left: "770px",
-top: "300px",
-
-fontFamily: "Inter",
-fontStyle: "normal",
-fontWeight: "700",
-fontSize: "30px",
-color: "#333333"
-
-}}>O+
-</p>
-
-<p
-  style=
-{{
-  position: "absolute",
-width: "351px",
-height: "59px",
-left: "770px",
-top: "350px",
-fontFamily: "Nanum Gothic, sans-serif",
-fontStyle: "normal",
-fontWeight: "700",
-fontSize: "30px",
-color: "#333333"
-
-}}>43
-</p>
-
-{/*<!-- fourth box --> */}
-<img style={{position: "absolute",
-width: "215px",
-height: "175px",
-left: "125px",
-top: "500px",
-}} src={sq}/>
-
-<img style={{position: "absolute",
-width: "42px",
-height: "60px",
-left: "150px",
-top: "550px",
-}} src={drop}/> 
-
-<p
-  style=
-{{
-  position: "absolute",
-width: "351px",
-height: "59px",
-left: "220px",
-top: "500px",
-
-fontFamily: "Inter",
-fontStyle: "normal",
-fontWeight: "700",
-fontSize: "30px",
-color: "#333333"
-
-}}>AB+
-</p>
-
-<p
-  style=
-{{
-  position: "absolute",
-width: "351px",
-height: "59px",
-left: "220px",
-top: "550px",
-fontFamily: "Nanum Gothic, sans-serif",
-fontStyle: "normal",
-fontWeight: "700",
-fontSize: "30px",
-color: "#333333"
-
-}}>43
-</p>
-
-{/*<!-- fifth box --> */}
-<img style={{position: "absolute",
-width: "215px",
-height: "175px",
-left: "400px",
-top: "500px",
-}} src={sq}/> 
-
-<img style={{position: "absolute",
-width: "42px",
-height: "60px",
-left: "425px",
-top: "550px",
-}} src={drop}/> 
-
-<p
-  style=
-{{
-  position: "absolute",
-width: "351px",
-height: "59px",
-left: "495px",
-top: "500px",
-
-fontFamily: "Inter",
-fontStyle: "normal",
-fontWeight: "700",
-fontSize: "30px",
-color: "#333333"
-
-}}>AB-
-</p>
-
-<p
-  style=
-{{
-  position: "absolute",
-width: "351px",
-height: "59px",
-left: "495px",
-top: "550px",
-fontFamily: "Nanum Gothic, sans-serif",
-fontStyle: "normal",
-fontWeight: "700",
-fontSize: "30px",
-color: "#333333"
-
-}}>43
-</p>
-
-{/*<!-- sixth box --> */}
-<img style={{position: "absolute",
-width: "215px",
-height: "175px",
-left: "675px",
-top: "500px",
-}} src={sq}/>
-
-<img style={{position: "absolute",
-width: "42px",
-height: "60px",
-left: "700px",
-top: "550px",
-}} src={drop}/>
-
-<p
-  style=
-{{
-  position: "absolute",
-width: "351px",
-height: "59px",
-left: "770px",
-top: "500px",
-
-fontFamily: "Inter",
-fontStyle: "normal",
-fontWeight: "700",
-fontSize: "30px",
-color: "#333333"
-
-}}>O-
-</p>
-
-<p
-  style=
-{{
-  position: "absolute",
-width: "351px",
-height: "59px",
-left: "770px",
-top: "550px",
-fontFamily: "Nanum Gothic, sans-serif",
-fontStyle: "normal",
-fontWeight: "700",
-fontSize: "30px",
-color: "#333333"
-
-}}>43
-</p>
-
-</div>
-  </div>
+ 
+  <img style={{opacity:"60%"}} src={bgimage}/>
+  <div class="text-block">
+    <div class="wrap">
+      <div class="search">
+        <input style={{}} type="text" class="searchTerm" placeholder="Search" />
+    
+      </div>
+    </div>
   </div>
 </div>
   </div>
-</div>
   
+  {/* <!-- Main Content Area --> */}
+  <div class='odinMainContentContainer2'>
+  
+  <img style={{margin:"60px",width:"90%",height:"80%"}} src={Group14}/>
+  </div>
+</div>
+  </div>
+</div>
+    </div>
   );
 }
 
-export default StockAvailable;
+export default Blooddashboard;
