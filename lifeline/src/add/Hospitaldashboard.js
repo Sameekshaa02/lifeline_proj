@@ -17,6 +17,7 @@ const tableElements = {
   paddingRight: "5px",
 };
 
+
 function HospitalDashboard() {
 
   return (
